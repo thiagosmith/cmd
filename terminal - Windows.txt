@@ -1,0 +1,636 @@
+**Introdução ao prompt de comando do Windows**
+
+Microsoft Windows [versão 10.0.19043.1237]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+**Exibir a localização**
+
+C:\Windows\system32>echo %cd%
+C:\Windows\system32
+
+**Navegação entre os diretórios**
+
+C:\Windows\system32>cd ..
+
+C:\Windows>cd ..
+
+C:\>cd Windows
+
+C:\Windows>cd \
+
+**Listagem de arquivos e diretórios**
+
+C:\>dir
+O volume na unidade C não tem nome.
+O Número de Série do Volume é 02F0-9E83
+
+Pasta de C:\
+
+18/09/2021  00:16    <DIR>          Compart
+18/08/2021  20:41    <DIR>          cygwin64
+17/08/2021  20:20    <DIR>          Intel
+25/09/2021  09:57    <DIR>          Luana
+07/12/2019  06:14    <DIR>          PerfLogs
+09/10/2021  09:59    <DIR>          Program Files
+01/09/2021  20:23    <DIR>          Program Files (x86)
+17/08/2021  20:45    <DIR>          Users
+26/09/2021  17:36    <DIR>          Windows
+0 arquivo(s)              0 bytes
+9 pasta(s)   149.718.405.120 bytes disponíveis
+
+C:\>cd Users
+
+C:\Users>cd Smith
+
+C:\Users\Smith>dir
+O volume na unidade C não tem nome.
+O Número de Série do Volume é 02F0-9E83
+
+Pasta de C:\Users\Smith
+
+09/10/2021  10:01    <DIR>          .
+09/10/2021  10:01    <DIR>          ..
+12/10/2021  19:06    <DIR>          .dbus-keyrings
+17/08/2021  20:29    <DIR>          .gnutls
+18/08/2021  21:40    <DIR>          .ssh
+11/10/2021  23:32    <DIR>          .VirtualBox
+21/08/2021  23:27    <DIR>          .zenmap
+17/08/2021  20:15    <DIR>          3D Objects
+19/08/2021  17:56    <DIR>          Application Data
+17/08/2021  20:15    <DIR>          Contacts
+11/10/2021  14:53    <DIR>          Desktop
+11/10/2021  19:52    <DIR>          Documents
+12/10/2021  21:47    <DIR>          Downloads
+17/08/2021  20:15    <DIR>          Favorites
+17/08/2021  20:15    <DIR>          Links
+17/08/2021  20:15    <DIR>          Music
+17/08/2021  20:27    <DIR>          OneDrive
+17/08/2021  20:17    <DIR>          Pictures
+17/08/2021  20:15    <DIR>          Saved Games
+25/08/2021  19:24    <DIR>          scan-desec
+17/08/2021  20:16    <DIR>          Searches
+12/09/2021  00:21    <DIR>          Videos
+11/10/2021  23:15    <DIR>          VirtualBox VMs
+0 arquivo(s)              0 bytes
+23 pasta(s)   149.718.917.120 bytes disponíveis
+
+C:\Users\Smith>cd Desktop
+
+C:\Users\Smith\Desktop>dir
+O volume na unidade C não tem nome.
+O Número de Série do Volume é 02F0-9E83
+
+Pasta de C:\Users\Smith\Desktop
+
+11/10/2021  14:53    <DIR>          .
+11/10/2021  14:53    <DIR>          ..
+02/09/2021  21:47    <DIR>          Aluno
+09/10/2021  17:12    <DIR>          capela
+17/08/2021  20:38               922 Chamaeleon.lnk
+11/10/2021  19:53    <DIR>          CiberOps Associate 1.0
+24/08/2021  23:50    <DIR>          Curso 516 Auditoria de Log
+12/10/2021  22:36    <DIR>          DESEC
+29/08/2021  12:32           298.938 desec1.png
+29/08/2021  12:34           163.039 desec2.png
+23/09/2021  20:18             2.227 Discord.lnk
+04/09/2021  18:50             1.707 duvida.txt
+23/08/2021  17:01             2.102 enadciber.txt
+29/08/2021  11:36            69.756 erro vnc.png
+02/09/2021  20:52            33.241 erro.png
+29/08/2021  11:35           225.095 flag1.png
+25/09/2021  09:57             1.887 Google Docs.lnk
+25/09/2021  09:58             1.937 Google Drive.lnk
+25/09/2021  10:04             2.653 Google Photos.lnk
+25/09/2021  09:57             1.899 Google Sheets.lnk
+25/09/2021  09:57             1.899 Google Slides.lnk
+04/09/2021  19:28            48.402 hash-python.png
+04/09/2021  17:13            33.804 hash.png
+22/08/2021  00:04             1.262 hosts
+29/08/2021  12:02           150.459 key vnc.png
+21/08/2021  22:39             1.032 Nmap - Zenmap GUI.lnk
+10/10/2021  14:22               194 Novo Documento de Texto.txt
+03/10/2021  11:20            19.245 pagamentos.ods
+21/08/2021  23:28    <DIR>          print
+07/09/2021  11:34           477.981 sambacry1.png
+17/08/2021  20:22    <DIR>          soft
+29/08/2021  12:03           217.252 vnc.png
+26/07/2015  18:17     3.747.676.160 w81.iso
+24 arquivo(s)  3.749.433.093 bytes
+9 pasta(s)   149.718.134.784 bytes disponíveis
+
+**Criação de diretórios**
+
+C:\Users\Smith\Desktop>mkdir curso
+
+C:\Users\Smith\Desktop>cd curso
+
+**Exibir saída na tela**
+
+C:\Users\Smith\Desktop\curso>echo Smith
+Smith
+
+**Enviar a saída para um arquivo**
+
+C:\Users\Smith\Desktop\curso>echo JAN > meses.txt
+
+C:\Users\Smith\Desktop\curso>type meses.txt
+JAN
+
+**Adicionar conteúdo a um arquivo**
+
+C:\Users\Smith\Desktop\curso>echo FEV >> meses.txt
+
+**Lendo conteúdo de um aqrquivo**
+
+C:\Users\Smith\Desktop\curso>type meses.txt
+JAN
+FEV
+
+**Abrindo arquivos pelo prompt**
+
+C:\Users\Smith\Desktop\curso>notepad meses.txt
+
+**Copiando arquivos**
+
+C:\Users\Smith\Desktop\curso>copy meses.txt novo.txt
+1 arquivo(s) copiado(s).
+
+C:\Users\Smith\Desktop\curso>dir
+O volume na unidade C não tem nome.
+O Número de Série do Volume é 02F0-9E83
+
+Pasta de C:\Users\Smith\Desktop\curso
+
+12/10/2021  22:38    <DIR>          .
+12/10/2021  22:38    <DIR>          ..
+12/10/2021  22:38                12 meses.txt
+12/10/2021  22:38                12 novo.txt
+2 arquivo(s)             24 bytes
+2 pasta(s)   149.713.944.576 bytes disponíveis
+
+**Movendo arquivos**
+
+C:\Users\Smith\Desktop\curso>move novo.txt ../
+1 arquivo(s) movido(s).
+
+**Apagando arquivos**
+
+C:\Users\Smith\Desktop>del novo.txt
+
+**Atributos de arquivos**
+
+C:\Users\Smith\Desktop>attrib /?
+Exibe ou altera atributos de arquivo.
+
+ATTRIB [+R | -R] [+A | -A] [+S | -S] [+H | -H] [+O | -O] [+I | -I] [+X | -X] [+P | -P] [+U | -U]
+[unidade:][caminho][nome_de_arquivo] [/S [/D]] [/L]
+
++ Define um atributo.
+
+-  Limpa um atributo.
+R Atributo de arquivo somente leitura.
+A Atributo de arquivo morto.
+S Atributo de arquivo do sistema.
+H Atributo de arquivo oculto.
+O Atributo offline.
+I Atributo de arquivo sem conteúdo indexado.
+X Sem atributo de arquivo de remoção.
+V Atributo de integridade.
+P Atributo fixado.
+U Atributo desafixado.
+B Atributo de Blob SMR.
+[unidade:][caminho][nome_de_arquivo] Especifica um ou mais arquivos para o atributo processar.
+/S Processa os arquivos correspondentes na pasta atual e em todas as subpastas.
+/D Inclui pastas no processamento.
+/L Trabalha nos atributos do Link Simbólico versus o destino do Link Simbólico
+
+**Tornando um diretório oculto**
+
+C:\Users\Smith\Desktop>attrib +h curso
+
+C:\Users\Smith\Desktop>attrib -h curso
+
+C:\Users\Smith\Desktop>attrib +h curso
+
+C:\Users\Smith\Desktop>dir /a
+O volume na unidade C não tem nome.
+O Número de Série do Volume é 02F0-9E83
+
+Pasta de C:\Users\Smith\Desktop
+
+12/10/2021  22:39    <DIR>          .
+12/10/2021  22:39    <DIR>          ..
+02/09/2021  21:47    <DIR>          Aluno
+09/10/2021  17:12    <DIR>          capela
+12/10/2021  22:39    <DIR>          curso
+12/10/2021  22:36    <DIR>          DESEC
+29/08/2021  12:32           298.938 desec1.png
+29/08/2021  12:34           163.039 desec2.png
+17/08/2021  20:15               282 desktop.ini
+23/09/2021  20:18             2.227 Discord.lnk
+04/09/2021  18:50             1.707 duvida.txt
+23/08/2021  17:01             2.102 enadciber.txt
+29/08/2021  11:36            69.756 erro vnc.png
+02/09/2021  20:52            33.241 erro.png
+29/08/2021  11:35           225.095 flag1.png
+25/09/2021  09:57             1.887 Google Docs.lnk
+25/09/2021  09:58             1.937 Google Drive.lnk
+25/09/2021  10:04             2.653 Google Photos.lnk
+25/09/2021  09:57             1.899 Google Sheets.lnk
+25/09/2021  09:57             1.899 Google Slides.lnk
+04/09/2021  19:28            48.402 hash-python.png
+04/09/2021  17:13            33.804 hash.png
+22/08/2021  00:04             1.262 hosts
+29/08/2021  12:02           150.459 key vnc.png
+21/08/2021  22:39             1.032 Nmap - Zenmap GUI.lnk
+10/10/2021  14:22               194 Novo Documento de Texto.txt
+03/10/2021  11:20            19.245 pagamentos.ods
+21/08/2021  23:28    <DIR>          print
+07/09/2021  11:34           477.981 sambacry1.png
+17/08/2021  20:22    <DIR>          soft
+29/08/2021  12:03           217.252 vnc.png
+26/07/2015  18:17     3.747.676.160 w81.iso
+25 arquivo(s)  3.749.433.375 bytes
+10 pasta(s)   149.709.000.704 bytes disponíveis
+
+C:\Users\Smith\Desktop>attrib -h curso
+
+**Criando e apagando diretórios**
+
+C:\Users\Smith\Desktop>mkdir vazio
+
+C:\Users\Smith\Desktop>rmdir vazio
+
+C:\Users\Smith\Desktop>rmdir /s curso
+curso, Tem certeza (S/N)? s
+
+**Enviando a saída para um arquivo**
+
+C:\Users\Smith\Desktop>echo Segredo > smith.txt
+
+C:\Users\Smith\Desktop>cd /
+
+C:\>dir /S smith.txt
+O volume na unidade C não tem nome.
+O Número de Série do Volume é 02F0-9E83
+
+Pasta de C:\Users\Smith\Desktop
+
+12/10/2021  22:43                10 smith.txt
+1 arquivo(s)             10 bytes
+
+ Total de Arquivos na Lista:
+           1 arquivo(s)             10 bytes
+           0 pasta(s)   149.706.539.008 bytes disponíveis
+
+**Networking**
+
+Microsoft Windows [versão 10.0.19043.1237]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Windows\system32>ipconfig
+
+Configuração de IP do Windows
+
+Adaptador Ethernet vEthernet (WSL):
+
+Sufixo DNS específico de conexão. . . . . . :
+Endereço IPv6 de link local . . . . . . . . : fe80::c9b3:ae29:4a35:cd84%54
+Endereço IPv4. . . . . . . .  . . . . . . . : 172.21.32.1
+Máscara de Sub-rede . . . . . . . . . . . . : 255.255.240.0
+Gateway Padrão. . . . . . . . . . . . . . . :
+
+Adaptador Ethernet VirtualBox Host-Only Network #2:
+
+Sufixo DNS específico de conexão. . . . . . :
+Endereço IPv6 de link local . . . . . . . . : fe80::187:5186:8c61:b293%7
+Endereço IPv4. . . . . . . .  . . . . . . . : 10.0.42.254
+Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+Gateway Padrão. . . . . . . . . . . . . . . :
+
+Adaptador Ethernet VirtualBox Host-Only Network #3:
+
+Sufixo DNS específico de conexão. . . . . . :
+Endereço IPv6 de link local . . . . . . . . : fe80::3172:1e91:ad16:8acd%25
+Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.42.254
+Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+Gateway Padrão. . . . . . . . . . . . . . . :
+
+Adaptador Ethernet VirtualBox Host-Only Network:
+
+Sufixo DNS específico de conexão. . . . . . :
+Endereço IPv6 de link local . . . . . . . . : fe80::642d:10c2:f2a1:5716%4
+Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.29.1
+Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+Gateway Padrão. . . . . . . . . . . . . . . :
+
+Adaptador Ethernet Ethernet:
+
+Sufixo DNS específico de conexão. . . . . . : Dlink
+Endereço IPv6 de link local . . . . . . . . : fe80::c81:d1d7:3011:221%19
+Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.0.116
+Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+Gateway Padrão. . . . . . . . . . . . . . . : fe80::7262:b8ff:fe86:832f%19
+192.168.0.1
+
+Adaptador Ethernet Conexão de Rede Bluetooth:
+
+Estado da mídia. . . . . . . . . . . . . .  : mídia desconectada
+Sufixo DNS específico de conexão. . . . . . :
+
+C:\Windows\system32>ipconfig /all
+
+Configuração de IP do Windows
+
+Nome do host. . . . . . . . . . . . . . . . : DESKTOP-EBP9K90
+Sufixo DNS primário . . . . . . . . . . . . :
+Tipo de nó. . . . . . . . . . . . . . . . . : híbrido
+Roteamento de IP ativado. . . . . . . . . . : não
+Proxy WINS ativado. . . . . . . . . . . . . : não
+Lista de pesquisa de sufixo DNS . . . . . . : Dlink
+
+Adaptador Ethernet vEthernet (WSL):
+
+Sufixo DNS específico de conexão. . . . . . :
+Descrição . . . . . . . . . . . . . . . . . : Hyper-V Virtual Ethernet Adapter
+Endereço Físico . . . . . . . . . . . . . . : 00-15-5D-09-92-32
+DHCP Habilitado . . . . . . . . . . . . . . : Não
+Configuração Automática Habilitada. . . . . : Sim
+Endereço IPv6 de link local . . . . . . . . : fe80::c9b3:ae29:4a35:cd84%54(Preferencial)
+Endereço IPv4. . . . . . . .  . . . . . . . : 172.21.32.1(Preferencial)
+Máscara de Sub-rede . . . . . . . . . . . . : 255.255.240.0
+Gateway Padrão. . . . . . . . . . . . . . . :
+IAID de DHCPv6. . . . . . . . . . . . . . . : 905975133
+DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-28-AD-F7-FA-CC-52-AF-48-12-0B
+Servidores DNS. . . . . . . . . . . . . . . : fec0:0:0:ffff::1%1
+fec0:0:0:ffff::2%1
+fec0:0:0:ffff::3%1
+NetBIOS em Tcpip. . . . . . . . . . . . . . : Habilitado
+
+Adaptador Ethernet VirtualBox Host-Only Network #2:
+
+Sufixo DNS específico de conexão. . . . . . :
+Descrição . . . . . . . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter #2
+Endereço Físico . . . . . . . . . . . . . . : 0A-00-27-00-00-07
+DHCP Habilitado . . . . . . . . . . . . . . : Não
+Configuração Automática Habilitada. . . . . : Sim
+Endereço IPv6 de link local . . . . . . . . : fe80::187:5186:8c61:b293%7(Preferencial)
+Endereço IPv4. . . . . . . .  . . . . . . . : 10.0.42.254(Preferencial)
+Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+Gateway Padrão. . . . . . . . . . . . . . . :
+IAID de DHCPv6. . . . . . . . . . . . . . . : 118095911
+DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-28-AD-F7-FA-CC-52-AF-48-12-0B
+Servidores DNS. . . . . . . . . . . . . . . : fec0:0:0:ffff::1%1
+fec0:0:0:ffff::2%1
+fec0:0:0:ffff::3%1
+NetBIOS em Tcpip. . . . . . . . . . . . . . : Habilitado
+
+Adaptador Ethernet VirtualBox Host-Only Network #3:
+
+Sufixo DNS específico de conexão. . . . . . :
+Descrição . . . . . . . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter #3
+Endereço Físico . . . . . . . . . . . . . . : 0A-00-27-00-00-19
+DHCP Habilitado . . . . . . . . . . . . . . : Não
+Configuração Automática Habilitada. . . . . : Sim
+Endereço IPv6 de link local . . . . . . . . : fe80::3172:1e91:ad16:8acd%25(Preferencial)
+Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.42.254(Preferencial)
+Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+Gateway Padrão. . . . . . . . . . . . . . . :
+IAID de DHCPv6. . . . . . . . . . . . . . . : 252313639
+DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-28-AD-F7-FA-CC-52-AF-48-12-0B
+Servidores DNS. . . . . . . . . . . . . . . : fec0:0:0:ffff::1%1
+fec0:0:0:ffff::2%1
+fec0:0:0:ffff::3%1
+NetBIOS em Tcpip. . . . . . . . . . . . . . : Habilitado
+
+Adaptador Ethernet VirtualBox Host-Only Network:
+
+Sufixo DNS específico de conexão. . . . . . :
+Descrição . . . . . . . . . . . . . . . . . : VirtualBox Host-Only Ethernet Adapter
+Endereço Físico . . . . . . . . . . . . . . : 0A-00-27-00-00-04
+DHCP Habilitado . . . . . . . . . . . . . . : Não
+Configuração Automática Habilitada. . . . . : Sim
+Endereço IPv6 de link local . . . . . . . . : fe80::642d:10c2:f2a1:5716%4(Preferencial)
+Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.29.1(Preferencial)
+Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+Gateway Padrão. . . . . . . . . . . . . . . :
+IAID de DHCPv6. . . . . . . . . . . . . . . : 1024065575
+DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-28-AD-F7-FA-CC-52-AF-48-12-0B
+Servidores DNS. . . . . . . . . . . . . . . : fec0:0:0:ffff::1%1
+fec0:0:0:ffff::2%1
+fec0:0:0:ffff::3%1
+NetBIOS em Tcpip. . . . . . . . . . . . . . : Habilitado
+
+Adaptador Ethernet Ethernet:
+
+Sufixo DNS específico de conexão. . . . . . : Dlink
+Descrição . . . . . . . . . . . . . . . . . : Intel(R) 82579LM Gigabit Network Connection
+Endereço Físico . . . . . . . . . . . . . . : CC-52-AF-48-12-0B
+DHCP Habilitado . . . . . . . . . . . . . . : Sim
+Configuração Automática Habilitada. . . . . : Sim
+Endereço IPv6 de link local . . . . . . . . : fe80::c81:d1d7:3011:221%19(Preferencial)
+Endereço IPv4. . . . . . . .  . . . . . . . : 192.168.0.116(Preferencial)
+Máscara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+Concessão Obtida. . . . . . . . . . . . . . : sexta-feira, 8 de outubro de 2021 18:13:48
+Concessão Expira. . . . . . . . . . . . . . : quarta-feira, 13 de outubro de 2021 18:46:50
+Gateway Padrão. . . . . . . . . . . . . . . : fe80::7262:b8ff:fe86:832f%19
+192.168.0.1
+Servidor DHCP . . . . . . . . . . . . . . . : 192.168.0.1
+IAID de DHCPv6. . . . . . . . . . . . . . . : 114053807
+DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-28-AD-F7-FA-CC-52-AF-48-12-0B
+Servidores DNS. . . . . . . . . . . . . . . : 192.168.0.1
+NetBIOS em Tcpip. . . . . . . . . . . . . . : Habilitado
+
+Adaptador Ethernet Conexão de Rede Bluetooth:
+
+Estado da mídia. . . . . . . . . . . . . .  : mídia desconectada
+Sufixo DNS específico de conexão. . . . . . :
+Descrição . . . . . . . . . . . . . . . . . : Bluetooth Device (Personal Area Network)
+Endereço Físico . . . . . . . . . . . . . . : 00-1A-7D-DA-71-10
+DHCP Habilitado . . . . . . . . . . . . . . : Sim
+Configuração Automática Habilitada. . . . . : Sim
+
+**Verificando conexões de rede**
+
+C:\Windows\system32>netstat -n
+
+Conexões ativas
+
+Proto  Endereço local         Endereço externo       Estado
+TCP    127.0.0.1:1040         127.0.0.1:1688         ESTABLISHED
+TCP    127.0.0.1:1688         127.0.0.1:1040         ESTABLISHED
+TCP    127.0.0.1:5901         127.0.0.1:8699         ESTABLISHED
+TCP    127.0.0.1:8699         127.0.0.1:5901         ESTABLISHED
+TCP    192.168.0.116:1024     34.120.202.204:443     ESTABLISHED
+TCP    192.168.0.116:1025     199.232.114.109:443    ESTABLISHED
+TCP    192.168.0.116:1026     13.107.42.16:443       ESTABLISHED
+TCP    192.168.0.116:1027     77.234.42.249:80       ESTABLISHED
+TCP    192.168.0.116:1028     192.124.249.155:443    ESTABLISHED
+TCP    192.168.0.116:1029     104.18.11.207:443      ESTABLISHED
+TCP    192.168.0.116:1030     151.101.0.217:443      ESTABLISHED
+TCP    192.168.0.116:1032     23.63.28.233:443       ESTABLISHED
+TCP    192.168.0.116:1033     204.79.197.200:443     ESTABLISHED
+TCP    192.168.0.116:1035     184.28.244.85:443      CLOSE_WAIT
+TCP    192.168.0.116:1036     13.107.246.254:443     ESTABLISHED
+TCP    192.168.0.116:1037     20.140.56.70:443       ESTABLISHED
+TCP    192.168.0.116:1038     204.79.197.222:443     ESTABLISHED
+TCP    192.168.0.116:1041     77.234.42.88:80        TIME_WAIT
+TCP    192.168.0.116:1045     104.87.28.9:443        CLOSE_WAIT
+TCP    192.168.0.116:8013     34.120.202.204:443     ESTABLISHED
+TCP    192.168.0.116:12403    2.21.91.128:443        ESTABLISHED
+TCP    192.168.0.116:13257    37.156.185.140:443     ESTABLISHED
+TCP    192.168.0.116:15817    172.217.28.14:443      ESTABLISHED
+TCP    192.168.0.116:21113    204.79.197.219:443     ESTABLISHED
+TCP    192.168.0.116:23271    162.159.135.234:443    ESTABLISHED
+TCP    192.168.0.116:23272    52.226.139.185:443     ESTABLISHED
+TCP    192.168.0.116:25821    151.101.0.217:443      ESTABLISHED
+TCP    [::1]:12098            [::1]:12100            ESTABLISHED
+TCP    [::1]:12100            [::1]:12098            ESTABLISHED
+
+**Filtrando conexões por protocolos**
+
+C:\Windows\system32>netstat -p tcp
+
+Conexões ativas
+
+Proto  Endereço local         Endereço externo       Estado
+TCP    127.0.0.1:1040         DESKTOP-EBP9K90:1688   ESTABLISHED
+TCP    127.0.0.1:1688         DESKTOP-EBP9K90:1040   ESTABLISHED
+TCP    127.0.0.1:5901         DESKTOP-EBP9K90:8699   ESTABLISHED
+TCP    127.0.0.1:8699         DESKTOP-EBP9K90:5901   ESTABLISHED
+TCP    192.168.0.116:1024     204:https              ESTABLISHED
+TCP    192.168.0.116:1025     199.232.114.109:https  ESTABLISHED
+TCP    192.168.0.116:1026     13.107.42.16:https     ESTABLISHED
+TCP    192.168.0.116:1027     mia04-013:http         ESTABLISHED
+TCP    192.168.0.116:1028     cloudproxy10155:https  ESTABLISHED
+TCP    192.168.0.116:1029     104.18.11.207:https    ESTABLISHED
+TCP    192.168.0.116:1030     151.101.0.217:https    ESTABLISHED
+TCP    192.168.0.116:1032     a23-63-28-233:https    ESTABLISHED
+TCP    192.168.0.116:1033     a-0001:https           ESTABLISHED
+TCP    192.168.0.116:1035     a184-28-244-85:https   CLOSE_WAIT
+TCP    192.168.0.116:1036     13.107.246.254:https   ESTABLISHED
+TCP    192.168.0.116:1037     20.140.56.70:https     ESTABLISHED
+TCP    192.168.0.116:1038     204.79.197.222:https   ESTABLISHED
+TCP    192.168.0.116:1041     filerep-replica-prod-002:http  TIME_WAIT
+TCP    192.168.0.116:1045     a104-87-28-9:https     CLOSE_WAIT
+TCP    192.168.0.116:8013     204:https              ESTABLISHED
+TCP    192.168.0.116:12403    a2-21-91-128:https     ESTABLISHED
+TCP    192.168.0.116:13257    37.156.185.140:https   ESTABLISHED
+TCP    192.168.0.116:15817    eze03s15-in-f14:https  ESTABLISHED
+TCP    192.168.0.116:23271    162.159.135.234:https  ESTABLISHED
+TCP    192.168.0.116:23272    52.226.139.185:https   ESTABLISHED
+TCP    192.168.0.116:25821    151.101.0.217:https    ESTABLISHED
+
+C:\Windows\system32>netstat -p udp
+
+Conexões ativas
+
+Proto  Endereço local         Endereço externo       Estado
+
+**Listando tarefas**
+
+C:\Windows\system32>tasklist
+
+Nome da imagem            Identifi Nome da sessão       Sessão# Uso de memór
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0     17.096 K
+Secure System                   56 Services                   0     26.608 K
+SppExtComObj.Exe              9440 Services                   0      9.856 K
+tasklist.exe                 10204 Console                    7     10.108 K
+
+C:\Windows\system32>tasklist
+
+Nome da imagem            Identifi Nome da sessão       Sessão# Uso de memór
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0     17.096 K
+notepad.exe                  13060 Console                    7     14.336 K
+tasklist.exe                 12892 Console                    7     10.100 K
+
+C:\Windows\system32>taskkill -pid 13060
+ÊXITO: sinal de encerramento enviado ao processo com PID 13060.
+
+Obs.: Caso não encerre o processo, pode executar o comando adicionando /f para forcar
+Exemplo:
+C:\Windows\system32>taskkill -pid 13060 /f
+
+**Gerenciando usuários**
+
+**Listando usuários**
+
+C:\Windows\system32>net user
+
+Contas de usuário para \\DESKTOP-EBP9K90
+
+---
+
+Administrador            Convidado                DefaultAccount
+Smith                    WDAGUtilityAccount
+Comando concluído com êxito.
+
+**Coletando informações de um usuário específico**
+
+C:\Windows\system32>net user Administrador
+Nome de usuário                     Administrador
+Nome completo
+Comentário                          Conta interna para a administração do computador/domínio
+Comentário do usuário
+Código do país/região               000 (Padrão do sistema)
+Conta ativa                         Não
+Conta expira em                     Nunca
+
+Última definição de senha           12/10/2021 22:48:53
+A senha expira                      Nunca
+Alteração de senha                  12/10/2021 22:48:53
+Senha requerida                     Sim
+O usuário pode alterar a senha      Sim
+
+Estações de trabalho permitidas     Todos
+Script de logon
+Perfil do usuário
+Pasta base
+Último logon                        Nunca
+
+Horário de logon permitido          Todos
+
+Associações de Grupo Local          *Administradores
+Associações de Grupo Global         *None
+Comando concluído com êxito.
+
+**Adicionando um usuário**
+
+C:\Windows\system32>net user desec Admin@123 /add
+Comando concluído com êxito.
+
+C:\Windows\system32>net user
+
+Contas de usuário para \\DESKTOP-EBP9K90
+
+---
+
+Administrador            Convidado                DefaultAccount
+desec                    Smith                    WDAGUtilityAccount
+Comando concluído com êxito.
+
+**Excluindo um usuário**
+
+C:\Windows\system32>net user desec /delete
+Comando concluído com êxito.
+
+C:\Windows\system32>net user
+
+Contas de usuário para \\DESKTOP-EBP9K90
+
+---
+
+Administrador            Convidado                DefaultAccount
+Smith                    WDAGUtilityAccount
+Comando concluído com êxito.
+
+C:\Windows\system32>net use
+Novas conexões serão lembradas.
+
+Não existem entradas na lista.
+
+C:\Windows\system32>

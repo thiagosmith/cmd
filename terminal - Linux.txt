@@ -1,0 +1,163 @@
+
+pwd
+--help
+man
+ls
+cd
+mkdir
+touch
+ls -l
+>
+touch .oculto
+ls
+man ls
+ls -la
+echo
+echo > arquivo
+echo >> arquivo
+echo > meses
+cat
+tac
+rm
+cp
+mv
+head
+tail
+wc -l
+
+adduser usuario
+cat /etc/passwd
+deluser usuario
+useradd -d /opt/usuario -s /bin/bash usuario2
+cat /etc/passwd
+passwd usuario2
+su usuario2
+adduser teste
+adduser usuario2 sudo
+su usuario2
+adduser teste
+deluser usuario2 sudo
+su usuario2
+adduser teste
+nano /etc/sudoers
+usuario2 
+ALL=(ALL:ALL) ALL
+
+cat /var/log/auth.log
+del user usuario2
+del user teste
+
+redes
+ifconfig
+ip a
+ifconfig eth0 10.0.0.2 netmask 255.255.255.0
+ifconfig
+nano /etc/network/interfaces
+auto etho
+iface eth0 inet dhcp
+CTRL + X S
+service networking restart
+/etc/inti.d/networking restart
+nano /etc/network/interfaces
+auto etho
+iface eth0 inet static
+address 192.168.1.2
+netmask 255.255.255.0
+gateway 192.168.1.1
+CTRL + X S
+clear
+reboot
+dhcpclient eth0
+route
+route -n
+ping www.com2dn.mb
+route del default
+route
+route -n
+ping www.com2dn.mb
+route add default gw 192.168.0.1
+route
+route -n
+ping www.com2dn.mb
+netstat -lt
+netstat -lu
+service ssh start
+netstat -lt
+netstat -ltn
+netstat -nltp
+service ssh stop
+netstat -nltp
+
+editores de texto
+vi
+vim
+nano
+
+atualizações
+Qual é a diferença entre atualização apt e upgrade adequado? 
+"apt-get update" atualiza a lista de fontes do pacote para obter a lista mais recente de pacotes disponíveis nos repositórios e atualizações de "apt-get upgrade" todos os pacotes atualmente instalados em nosso sistema Linux para suas versões mais recentes.
+
+nano /etc/apt/sources.list
+apt update
+apt upgrade
+apt update && sudo apt upgrade
+do-release-upgrade
+apt search pacote
+apt remove pacote
+dpkg -i arquivo.deb
+dpkg -l
+
+trabalhando com serviços
+cat /etc/services
+service sshd start
+sevice sshd stop
+service sshd restar
+
+localizando arquivos
+locate
+touch arquivox
+updatedb
+touch arquivox
+whereis
+which
+find /root/ -name arquivo
+find /root/ -name arquivox
+find /root/ -name arquivo*
+find / -name access.log
+
+ganhando tempo
+cat /etc/passwd | grep "/bin/bash"
+grep "/bin/bash" /etc/passwd
+grep "/bin/bash" /etc/passwd > temshell
+cat temshell
+grep -v "nologin" /etc/passwd
+egrep -v "nologin|/bin/false" /etc/passwd
+egrep "root|usuario" /etc/passwd
+cat /etc/passwd
+awk -F : '{print $1}' /etc/passwd
+awk -F : '{print $1}' temshell
+awk -F : '{print $6}' temshell
+awk -F : '{print $1,$6}' temshell
+awk -F : '{print "O usuario" $1 "Utiliza o diretorio" $6}' temshell
+cut -d : -f1 temshel
+cut -d : -f6 temshel
+cut -d : -f1,6 temshel
+nano teste
+cat teste
+JAN
+EVE
+MAR
+ABR
+MAI
+JUN
+JUL
+AGO
+SET
+OUT
+NOV
+DEZ
+sed 's/EVE/FEV' teste.txt
+sed 's/EVE/FEV' teste.txt > teste2.txt
+GREP EGREP AWK CUT SED
+
+
